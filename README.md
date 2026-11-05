@@ -4,7 +4,7 @@ Página pessoal estática construída com HTML semântico, CSS e JavaScript vani
 
 ## Acesse
 
-[Visitar a página no GitHub Pages](https://devlavanere.github.io/IA-Essentials-Mini-Projeto-01/)
+[Visitar a página no GitHub Pages](https://devlavanere.github.io/sobre-mim/)
 
 ## Desenvolvimento local
 
