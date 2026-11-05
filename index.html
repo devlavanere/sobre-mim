@@ -8,10 +8,38 @@
       content="Conheça Michel Lavanere Sampaio, desenvolvedor focado em Java, Groovy, microsserviços e sistemas embarcados."
     >
     <title>Michel Lavanere Sampaio — Desenvolvedor</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23101210'/%3E%3Cpath d='M14 46V18h8l10 14 10-14h8v28h-9V32L32 44 23 32v14z' fill='%23c3f56a'/%3E%3C/svg%3E"
+    >
+    <script>
+      try {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "light" || savedTheme === "dark") {
+          document.documentElement.dataset.theme = savedTheme;
+        }
+      } catch (error) {
+        console.error("Não foi possível carregar o tema salvo.", error);
+      }
+    </script>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
   </head>
   <body>
     <main class="profile">
+      <div class="topbar">
+        <button class="theme-toggle" type="button" aria-label="Ativar tema claro">
+          <svg class="theme-icon icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path>
+          </svg>
+          <svg class="theme-icon icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.5 15.5A8.5 8.5 0 0 1 8.5 3.5 8.5 8.5 0 1 0 20.5 15.5Z"></path>
+          </svg>
+          <span>Tema</span>
+        </button>
+      </div>
       <header class="intro">
         <p class="eyebrow">Desenvolvedor de software</p>
         <h1>Michel Lavanere <span>Sampaio.</span></h1>
@@ -37,6 +65,14 @@
           <li><span>02</span> Testes Automatizados <span class="detail">com Spock</span></li>
           <li><span>03</span> Design Patterns Avançados</li>
         </ul>
+      </section>
+
+      <section class="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title">Projetos</h2>
+        <p class="projects-status" id="projects-status" role="status" aria-live="polite">
+          Carregando repositórios do GitHub…
+        </p>
+        <ul class="projects-grid" id="projects-list"></ul>
       </section>
 
       <footer class="contact">
