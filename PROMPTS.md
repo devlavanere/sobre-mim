@@ -6,17 +6,17 @@ O conteúdo de cada bloco preserva o texto original.
 ## 1. Página pessoal
 
 ```text
-**Atue como um Desenvolvedor Frontend Sênior. Quero que você crie uma página pessoal para mim. Crie os arquivos index.html e style.css.
+**Quero que você crie uma página pessoal para mim. Crie os arquivos index.html e style.css.
 
-Requisitos do conteúdo:
+Requisitos do conteúdo da página:
 
 1. Nome: Michel Lavanere Sampaio.
 
 1. Frase de apresentação: 'Transformando lógica em soluções escaláveis, do baixo nível à nuvem.'
 2. Seção 'Sobre': Escreva um parágrafo destacando meu foco atual no ecossistema Java/Groovy e microsserviços, com forte base em hardware e sistemas embarcados.
 3. Tecnologias que quero aprender/aprofundar: Crie uma lista com: Arquitetura Cloud (AWS/Huawei), Testes Automatizados com Spock e Design Patterns Avançados.
-4. Adicione um link estilizado apontando para '[https://github.com/devlavanere](https://github.com/SeuUsuario)'.
-Restrições: Não adicione frameworks, use apenas HTML semântico e Vanilla CSS moderno.
+4. Adicione um link estilizado apontando para '[https://github.com/devlavanere](https://github.com/devlavanere)'.
+Restrições: Não adicione frameworks, use apenas HTML semântico e CSS.
 
 Quando terminar e eu validar que está correto, faça um commit semântico com a mensagem: 'feat: cria estrutura inicial da página sobre mim'.
 ```
@@ -31,10 +31,4 @@ Agora, adicione um botão elegante no topo da página para alternar entre tema c
 
 ```text
 Crie um arquivo `script.js` e conecte-o ao HTML. Adicione uma seção 'Projetos' abaixo das tecnologias. Faça um `fetch` na API do GitHub para buscar meus repositórios públicos e exiba-os em formato de cards responsivos (mostrando nome, descrição e link). Faça o commit semântico: 'feat: integra API do GitHub para listagem de projetos'.
-```
-
-## 4. Instrução posterior de commit
-
-```text
-Faça novo commit do que foi feito até agora, utilizando mesmo formato do primeiro commit
 ```
